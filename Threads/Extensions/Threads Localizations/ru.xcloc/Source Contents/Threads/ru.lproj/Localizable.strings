@@ -1,0 +1,114 @@
+/* No comment provided by engineer. */
+"" = "";
+
+/* No comment provided by engineer. */
+"+ Add link..." = "+ Добавьте ссылку...";
+
+/* No comment provided by engineer. */
+"2 followers" = "2 подписчика";
+
+/* No comment provided by engineer. */
+"About" = "О приложении";
+
+/* No comment provided by engineer. */
+"Account" = "Аккаунт";
+
+/* No comment provided by engineer. */
+"Already have an account?" = "Уже есть аккаунт?";
+
+/* No comment provided by engineer. */
+"Bio" = "Описание";
+
+/* No comment provided by engineer. */
+"Cancel" = "Отмена";
+
+/* No comment provided by engineer. */
+"Don't have an account?" = "Ещё не создавали аккаунт?";
+
+/* No comment provided by engineer. */
+"Done" = "Готово";
+
+/* No comment provided by engineer. */
+"Edit Profile" = "Изменить профиль";
+
+/* No comment provided by engineer. */
+"Enter your bio..." = "Напишите ваше описание...";
+
+/* No comment provided by engineer. */
+"Enter your email" = "Введите эл. почту";
+
+/* No comment provided by engineer. */
+"Enter your full name" = "Введите ваше полное имя";
+
+/* No comment provided by engineer. */
+"Enter your password" = "Введите пароль";
+
+/* No comment provided by engineer. */
+"Enter your username" = "Введите имя пользователя";
+
+/* No comment provided by engineer. */
+"Follow" = "Подписаться";
+
+/* No comment provided by engineer. */
+"Follow and invite friends" = "Подписаться и пригласить друзей";
+
+/* No comment provided by engineer. */
+"Forgot password?" = "Забыли пароль?";
+
+/* No comment provided by engineer. */
+"Hello, World!" = "Привет, мир!";
+
+/* No comment provided by engineer. */
+"Help" = "Помощь";
+
+/* No comment provided by engineer. */
+"Language" = "Язык";
+
+/* No comment provided by engineer. */
+"Link" = "Ссылка";
+
+/* No comment provided by engineer. */
+"Log out" = "Выйти из аккаунта";
+
+/* No comment provided by engineer. */
+"Login" = "Войти в аккаунт";
+
+/* No comment provided by engineer. */
+"Login with Email" = "Войти по эл. почте";
+
+/* No comment provided by engineer. */
+"Name" = "Имя";
+
+/* No comment provided by engineer. */
+"New Thread" = "Новый Thread";
+
+/* No comment provided by engineer. */
+"Notifications" = "Уведомления";
+
+/* No comment provided by engineer. */
+"Post" = "Опубликовать";
+
+/* No comment provided by engineer. */
+"Privacy" = "Приватность";
+
+/* No comment provided by engineer. */
+"Private profile" = "Скрытый профиль";
+
+/* No comment provided by engineer. */
+"Search" = "Поиск";
+
+/* No comment provided by engineer. */
+"Settings" = "Настройки";
+
+/* No comment provided by engineer. */
+"Sign In" = "Войти";
+
+/* No comment provided by engineer. */
+"Sign Up" = "Зарегистрироваться";
+
+/* No comment provided by engineer. */
+"Start a thread..." = "Начните ваш thread...";
+
+/* No comment provided by engineer. */
+"Threads" = "Threads";
+
