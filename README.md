@@ -14,6 +14,10 @@
   <a href="#license">License</a>
 </p>
 
+![First screen](https://github.com/bolyaolya/Threads-Clone---SwiftUI/assets/108070285/d04e92df-5311-4db2-9e93-7b1578aabab0)
+![Login screen](https://github.com/bolyaolya/Threads-Clone---SwiftUI/assets/108070285/3db170f8-a5d2-450c-977d-2d5bea3f0aba)
+
+
 ## Introduction
 
 This project is a clone of Threads app. I combined SwiftUI for the user interface, Firebase for backend functionalities, and Kingfisher for image loading and caching.
@@ -26,6 +30,8 @@ This Threads Clone project is not affiliated with or endorsed by Threads or any 
 * Thread Creation;
 * User Profiles;
 * Real-time Updates: Enjoy real-time updates when new threads or posts are created.
+
+![Thread creation](https://github.com/bolyaolya/Threads-Clone---SwiftUI/assets/108070285/2cfa0dad-dad4-4ba5-84a5-d59b6fe81be2)
 
 <a id="installation"></a>
 ## Installation
