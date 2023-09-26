@@ -33,6 +33,7 @@ struct ExploreView: View {
             .navigationTitle("Search")
             .searchable(text: $searchText, prompt: "Search")
         }
+        .tint(Color("black"))
     }
 }
 

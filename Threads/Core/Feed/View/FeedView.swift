@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FeedView: View {
     @StateObject var viewModel = FeedViewModel()
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationStack {
@@ -26,13 +25,14 @@ struct FeedView: View {
             .navigationTitle("Threads")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .tint(Color("black"))
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     
                 } label: {
                     Image(systemName: "arrow.counterclockwise")
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .foregroundColor(Color("black"))
                 }
             }
 

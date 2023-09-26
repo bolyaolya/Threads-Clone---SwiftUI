@@ -11,7 +11,6 @@ struct CreateThreadView: View {
     @StateObject var viewModel = CreateThreadViewModel()
     @State private var caption = ""
     @Environment(\.dismiss) var dismiss
-    @Environment(\.colorScheme) var colorScheme
     
     private var user: User?  {
         return UserService.shared.currentUser
@@ -56,7 +55,7 @@ struct CreateThreadView: View {
                         dismiss()
                     }
                     .font(.subheadline)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .foregroundColor(Color("black"))
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -70,10 +69,11 @@ struct CreateThreadView: View {
                     .disabled(caption.isEmpty)
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .foregroundColor(Color("black"))
                 }
             }
         }
+        .tint(Color("black"))
     }
 }
 

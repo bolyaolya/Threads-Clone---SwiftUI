@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationStack {
@@ -87,7 +86,7 @@ struct SettingsView: View {
                 } label: {
                     Text("Log out")
                         .font(.system(size: 18))
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .foregroundColor(Color("black"))
                         .padding(.leading, 16)
                 }
                 Spacer()
@@ -96,7 +95,7 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
         }
-        
+        .tint(Color("black"))
     }
 }
 

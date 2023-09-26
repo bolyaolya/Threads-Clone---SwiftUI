@@ -10,7 +10,6 @@ import SwiftUI
 struct ThreadCell: View {
     let thread: Thread
     @State private var likeButtonPressed = false
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack {
@@ -51,7 +50,7 @@ struct ThreadCell: View {
                                     .foregroundColor(.red)
                             } else {
                                 Image(systemName: likeButtonPressed ? "heart.fill" : "heart")
-                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                    .foregroundColor(Color("black"))
                             }
                         }
                         
@@ -59,21 +58,21 @@ struct ThreadCell: View {
                             
                         } label: {
                             Image(systemName: "bubble.right")
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                .foregroundColor(Color("black"))
                         }
                         
                         Button {
                             
                         } label: {
                             Image(systemName: "arrow.rectanglepath")
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                .foregroundColor(Color("black"))
                         }
                         
                         Button {
                             
                         } label: {
                             Image(systemName: "paperplane")
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                .foregroundColor(Color("black"))
                         }
                     }
                     .foregroundColor(.black)

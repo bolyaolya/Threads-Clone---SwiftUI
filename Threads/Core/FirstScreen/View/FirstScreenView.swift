@@ -26,7 +26,7 @@ struct FirstScreenView: View {
                     HStack {
                         Text("Login with Email")
                             .font(.system(size: 18))
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(Color("black"))
                         Spacer()
                         Image("google-icon")
                             .resizable()
@@ -41,6 +41,7 @@ struct FirstScreenView: View {
                 }
             }
         }
+        .tint(Color("black"))
     }
 }
 

@@ -46,7 +46,7 @@ struct LoginView: View {
                         .fontWeight(.semibold)
                         .padding(.vertical)
                         .padding(.trailing, 28)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .foregroundColor(Color("black"))
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 
@@ -56,15 +56,15 @@ struct LoginView: View {
                     Text("Login")
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                        .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
+                        .foregroundColor(Color("white"))
                         .frame(width: 352, height: 44)
-                        .background(colorScheme == .dark ? Color.white : Color.black)
+                        .background(Color("black"))
                         .cornerRadius(8)
                 }
                 
                 Spacer()
                 Divider()
-                    .background(colorScheme == .dark ? Color.white : Color.black)
+                    .background(Color("black"))
                 
                 NavigationLink {
                     RegistrationView()
@@ -75,13 +75,13 @@ struct LoginView: View {
                         Text("Sign Up")
                             .fontWeight(.semibold)
                     }
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .foregroundColor(Color("black"))
                     .font(.footnote)
                 }
                 .padding(.vertical, 16)
             }
         }
-        
+        .navigationBarBackButtonHidden(true)
     }
 }
 

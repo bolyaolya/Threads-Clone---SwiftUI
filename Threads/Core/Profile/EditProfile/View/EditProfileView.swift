@@ -99,6 +99,7 @@ struct EditProfileView: View {
                 }
             }
         }
+        .tint(Color("black"))
     }
 }
 

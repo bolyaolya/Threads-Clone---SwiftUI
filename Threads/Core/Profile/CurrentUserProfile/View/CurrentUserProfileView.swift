@@ -10,7 +10,6 @@ import SwiftUI
 struct CurrentUserProfileView: View {
     @StateObject var viewModel = CurrentUserProfileViewModel()
     @State private var showEditProfile = false
-    @Environment(\.colorScheme) var colorScheme
     
     private var currentUser: User? {
         return viewModel.currentUser
@@ -53,12 +52,13 @@ struct CurrentUserProfileView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SettingsView()) {
                         Image(systemName: "line.3.horizontal")
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(Color("black"))
                     }
                 }
             }
             .padding(.horizontal)
         }
+        .tint(Color("black"))
     }
 }
 

@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct UserCell: View {
-    @Environment(\.colorScheme) var colorScheme
-    
     let user: User
     
     var body: some View {
@@ -21,7 +19,7 @@ struct UserCell: View {
                     .fontWeight(.semibold)
                 Text(user.fullname)
             }
-            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+            .foregroundColor(Color("black"))
             .font(.footnote)
             Spacer()
             
@@ -29,7 +27,7 @@ struct UserCell: View {
                 .font(.subheadline)
                 .fontWeight(.semibold)
                 .frame(width: 100, height: 32)
-                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                .foregroundColor(Color("black"))
                 .overlay {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color(.systemGray4),lineWidth: 1)

@@ -10,32 +10,18 @@ import SwiftUI
 struct ThreadsTabView: View {
     @State private var selectedTab = 0
     @State private var showCreatThreadView = false
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         TabView(selection: $selectedTab) {
             FeedView()
                 .tabItem {
-                    if selectedTab == 0 {
-                        Image(systemName: "house.fill")
-                            .renderingMode(.template)
-                            .environment(\.symbolVariants, .fill)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    } else {
-                        Image(systemName: "house")
-                            .renderingMode(.template)
-                            .environment(\.symbolVariants, .none)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    }
+                    Image(systemName: selectedTab == 0 ? "house.fill" : "house")
+                        .renderingMode(.template)
+                        .environment(\.symbolVariants, .none)
+                        .foregroundColor(Color("black"))
             }
                 .onAppear { selectedTab = 0 }
                 .tag(0)
-            
-            //                .tabItem {
-            //                    Image(systemName: selectedTab == 0 ? "house.fill" : "house")
-            //                        .environment(\.symbolVariants, selectedTab == 0 ? .fill : .none)
-            //                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-            //                }
             
             ExploreView()
                 .tabItem {
@@ -77,7 +63,7 @@ struct ThreadsTabView: View {
             CreateThreadView()
         })
         
-        .tint(.black)
+        .tint(Color("black"))
     }
 }
 

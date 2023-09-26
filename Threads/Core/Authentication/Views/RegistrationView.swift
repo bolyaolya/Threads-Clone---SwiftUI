@@ -54,16 +54,16 @@ struct RegistrationView: View {
                 Text("Sign Up")
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                    .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
+                    .foregroundColor(Color("white"))
                     .frame(width: 352, height: 44)
-                    .background(colorScheme == .dark ? Color.white : Color.black)
+                    .background(Color("black"))
                     .cornerRadius(8)
             }
             .padding(.vertical)
             
             Spacer()
             Divider()
-                .background(colorScheme == .dark ? Color.white : Color.black)
+                .background(Color("black"))
             
             NavigationLink(destination: LoginView(), label: {
                 HStack(spacing: 3) {
@@ -71,7 +71,7 @@ struct RegistrationView: View {
                     Text("Sign In")
                         .fontWeight(.semibold)
                 }
-                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                .foregroundColor(Color("black"))
                 .font(.system(size: 16))
             })
             .padding(.vertical, 16)
