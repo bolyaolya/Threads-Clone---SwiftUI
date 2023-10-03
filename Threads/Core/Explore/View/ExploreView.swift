@@ -30,7 +30,7 @@ struct ExploreView: View {
             .navigationDestination(for: User.self, destination: { user in
                 ProfileView(user: user)
             })
-            .navigationTitle("Search")
+            .navigationTitle("Search".localized)
             .searchable(text: $searchText, prompt: "Search")
         }
         .tint(Color("black"))

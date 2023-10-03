@@ -25,7 +25,7 @@ struct CurrentUserProfileView: View {
                     Button {
                         showEditProfile.toggle()
                     } label: {
-                        Text("Edit Profile")
+                        Text("Edit Profile".localized)
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .foregroundColor(.black)

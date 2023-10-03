@@ -48,6 +48,7 @@
 
 /* No comment provided by engineer. */
 "Follow" = "Follow";
+"Unfollow" = "Unfollow";
 
 /* No comment provided by engineer. */
 "Follow and invite friends" = "Follow and invite friends";
@@ -111,4 +112,10 @@
 
 /* No comment provided by engineer. */
 "Threads" = "Threads";
+
+"You have no replies yet" = "You have no replies yet";
+
+"Replies" = "Replies";
+
+
 

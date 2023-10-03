@@ -31,17 +31,17 @@ struct LoginView: View {
                 }
                 
                 VStack {
-                    TextField("Enter your email", text: $viewModel.email)
+                    TextField("Enter your email".localized, text: $viewModel.email)
                         .modifier(ThreadsTextFieldModifier())
                     
-                    SecureField("Enter your password", text: $viewModel.password)
+                    SecureField("Enter your password".localized, text: $viewModel.password)
                         .modifier(ThreadsTextFieldModifier())
                 }
                 
                 NavigationLink {
                     
                 } label: {
-                    Text("Forgot password?")
+                    Text("Forgot password?".localized)
                         .font(.footnote)
                         .fontWeight(.semibold)
                         .padding(.vertical)
@@ -53,7 +53,7 @@ struct LoginView: View {
                 Button {
                     Task { try await viewModel.loginUser() }
                 } label: {
-                    Text("Login")
+                    Text("Login".localized)
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .foregroundColor(Color("white"))
@@ -71,8 +71,8 @@ struct LoginView: View {
                         .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 3) {
-                        Text("Don't have an account?")
-                        Text("Sign Up")
+                        Text("Don't have an account?".localized)
+                        Text("Sign Up".localized)
                             .fontWeight(.semibold)
                     }
                     .foregroundColor(Color("black"))

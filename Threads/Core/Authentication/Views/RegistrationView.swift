@@ -31,18 +31,18 @@ struct RegistrationView: View {
             }
             
             VStack {
-                TextField("Enter your email", text: $viewModel.email)
+                TextField("Enter your email".localized, text: $viewModel.email)
                     .autocapitalization(.none)
                     .modifier(ThreadsTextFieldModifier())
                 
-                SecureField("Enter your password", text: $viewModel.password)
+                SecureField("Enter your password".localized, text: $viewModel.password)
                     .modifier(ThreadsTextFieldModifier())
                 
-                TextField("Enter your full name", text: $viewModel.fullname)
+                TextField("Enter your full name".localized, text: $viewModel.fullname)
                     .autocorrectionDisabled()
                     .modifier(ThreadsTextFieldModifier())
                 
-                TextField("Enter your username", text: $viewModel.username)
+                TextField("Enter your username".localized, text: $viewModel.username)
                     .autocapitalization(.none)
                     .autocorrectionDisabled()
                     .modifier(ThreadsTextFieldModifier())
@@ -51,7 +51,7 @@ struct RegistrationView: View {
             Button {
                 Task { try await viewModel.createUser() }
             } label: {
-                Text("Sign Up")
+                Text("Sign Up".localized)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(Color("white"))
@@ -67,8 +67,8 @@ struct RegistrationView: View {
             
             NavigationLink(destination: LoginView(), label: {
                 HStack(spacing: 3) {
-                    Text("Already have an account?")
-                    Text("Sign In")
+                    Text("Already have an account?".localized)
+                    Text("Sign In".localized)
                         .fontWeight(.semibold)
                 }
                 .foregroundColor(Color("black"))

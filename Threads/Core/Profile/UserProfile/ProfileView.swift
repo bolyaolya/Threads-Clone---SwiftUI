@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var isFollowing = false
     let user: User
     
     var body: some View {
@@ -17,9 +18,9 @@ struct ProfileView: View {
                 ProfileHeaderView(user: user)
                 
                 Button {
-                    
+                    isFollowing.toggle()
                 } label: {
-                    Text("Follow")
+                    Text(isFollowing ? "Unfollow".localized : "Follow".localized)
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)

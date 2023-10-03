@@ -22,7 +22,7 @@ struct FeedView: View {
             .refreshable {
                 Task { try await viewModel.fetchThreads() }
             }
-            .navigationTitle("Threads")
+            .navigationTitle("Threads".localized)
             .navigationBarTitleDisplayMode(.inline)
         }
         .tint(Color("black"))

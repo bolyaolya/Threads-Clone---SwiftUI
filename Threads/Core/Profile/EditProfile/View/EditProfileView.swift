@@ -26,7 +26,7 @@ struct EditProfileView: View {
                     //name and profile image
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("Name")
+                            Text("Name".localized)
                                 .fontWeight(.semibold)
                             
                             Text(user.fullname)
@@ -49,23 +49,23 @@ struct EditProfileView: View {
                     
                     //bio field
                     VStack(alignment: .leading) {
-                        Text("Bio")
+                        Text("Bio".localized)
                             .fontWeight(.semibold)
-                        TextField("Enter your bio...", text: $bio, axis: .vertical)
+                        TextField("Enter your bio...".localized, text: $bio, axis: .vertical)
                     }
                     
                     Divider()
                     
                     //link field
                     VStack(alignment: .leading) {
-                        Text("Link")
+                        Text("Link".localized)
                             .fontWeight(.semibold)
-                        TextField("+ Add link...", text: $link)
+                        TextField("+ Add link...".localized, text: $link)
                     }
                     
                     Divider()
                     
-                    Toggle("Private profile", isOn: $isPrivateProfile)
+                    Toggle("Private profile".localized, isOn: $isPrivateProfile)
                 }
                 .font(.footnote)
                 .padding()
@@ -77,11 +77,11 @@ struct EditProfileView: View {
                 })
                 .padding()
             }
-            .navigationTitle("Edit Profile")
+            .navigationTitle("Edit Profile".localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Cancel") {
+                    Button("Cancel".localized) {
                         dismiss()
                     }
                     .font(.subheadline)
@@ -89,7 +89,7 @@ struct EditProfileView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Done") {
+                    Button("Done".localized) {
                         Task { try await viewModel.updateUserData() }
                         dismiss()
                     }

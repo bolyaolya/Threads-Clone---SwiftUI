@@ -25,15 +25,10 @@ struct ProfileHeaderView: View {
                     Text(user?.username ?? "")
                         .font(.subheadline)
                 }
-                
                 if let bio = user?.bio {
                     Text(bio)
                         .font(.footnote)
                 }
-                
-                Text("2 followers")
-                    .font(.caption)
-                    .foregroundColor(.gray)
             }
             Spacer()
             CircularProfileImageView(user: user, size: .medium)

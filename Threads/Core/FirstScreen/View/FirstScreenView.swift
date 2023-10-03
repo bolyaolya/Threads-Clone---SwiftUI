@@ -24,7 +24,7 @@ struct FirstScreenView: View {
                         .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
-                        Text("Login with Email")
+                        Text("Login with Email".localized)
                             .font(.system(size: 18))
                             .foregroundColor(Color("black"))
                         Spacer()

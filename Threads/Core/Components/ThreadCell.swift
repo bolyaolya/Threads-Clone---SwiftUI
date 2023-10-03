@@ -9,9 +9,12 @@ import SwiftUI
 
 struct ThreadCell: View {
     let thread: Thread
-    @State private var likeButtonPressed = false
+    @State private var isLiked = false
+    @State private var likeCount = 0
+    let localizedLikes = "countLikes".localized
     
     var body: some View {
+        
         VStack {
             HStack(alignment: .top, spacing: 12) {
                 CircularProfileImageView(user: thread.user, size: .small)
@@ -27,53 +30,28 @@ struct ThreadCell: View {
                         Text(thread.timestamp.timestampString())
                             .font(.caption)
                             .foregroundColor(Color(.systemGray3))
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .foregroundColor(Color(.darkGray))
-                        }
-
                     }
                     
                     Text(thread.caption)
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                     
-                    HStack(spacing: 16) {
+                    HStack(spacing: 8) {
                         Button {
-                            likeButtonPressed.toggle()
-                        } label: {
-                            if likeButtonPressed {
-                                Image(systemName: likeButtonPressed ? "heart.fill" : "heart")
-                                    .foregroundColor(.red)
+                            if isLiked {
+                                likeCount -= 1
                             } else {
-                                Image(systemName: likeButtonPressed ? "heart.fill" : "heart")
-                                    .foregroundColor(Color("black"))
+                                likeCount += 1
                             }
+                            isLiked.toggle()
+                        } label: {
+                            Image(systemName: isLiked ? "heart.fill" : "heart")
+                                .foregroundColor(isLiked ? .red : Color("black"))
                         }
                         
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "bubble.right")
-                                .foregroundColor(Color("black"))
-                        }
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                                .foregroundColor(Color("black"))
-                        }
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "paperplane")
-                                .foregroundColor(Color("black"))
-                        }
+                        Text(String(format: localizedLikes, Int(likeCount)))
+                            .font(.system(size: 12))
+                            .foregroundColor(Color(.systemGray))
                     }
                     .foregroundColor(.black)
                     .padding(.vertical, 8)

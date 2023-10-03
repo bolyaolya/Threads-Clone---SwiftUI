@@ -48,6 +48,7 @@
 
 /* No comment provided by engineer. */
 "Follow" = "Подписаться";
+"Unfollow" = "Отписаться";
 
 /* No comment provided by engineer. */
 "Follow and invite friends" = "Подписаться и пригласить друзей";
@@ -111,4 +112,13 @@
 
 /* No comment provided by engineer. */
 "Threads" = "Threads";
+
+/* No comment provided by engineer. */
+"You have no replies yet" = "Пока ещё нет ответов";
+
+"Replies" = "Ответы";
+
+"Dark Theme" = "Тёмная тема";
+
+"Enable push notifications" = "Включить пуш уведолмения";
 

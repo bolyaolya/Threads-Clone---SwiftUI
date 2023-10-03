@@ -13,8 +13,8 @@ enum ProfileThreadFilter: Int, CaseIterable, Identifiable {
     
     var title: String {
         switch self {
-        case.threads: return "Threads"
-        case.replies: return "Replies"
+        case.threads: return "Threads".localized
+        case.replies: return "Replies".localized
         }
     }
     

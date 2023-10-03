@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UserCell: View {
+    @State private var isFollowing = false
     let user: User
     
     var body: some View {
@@ -23,15 +24,21 @@ struct UserCell: View {
             .font(.footnote)
             Spacer()
             
-            Text("Follow")
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .frame(width: 100, height: 32)
-                .foregroundColor(Color("black"))
-                .overlay {
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color(.systemGray4),lineWidth: 1)
-                }
+            Button {
+                isFollowing.toggle()
+            } label: {
+                Text(isFollowing ? "Unfollow" : "Follow")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("black"))
+                    .frame(width: 100, height: 32)
+                    .background(Color("white"))
+                    .cornerRadius(8)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.systemGray4),lineWidth: 1)
+                    }
+            } 
         }
         .padding(.horizontal)
     }

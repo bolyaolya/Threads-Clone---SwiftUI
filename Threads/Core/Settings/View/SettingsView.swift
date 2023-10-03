@@ -9,82 +9,38 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    @State private var darkTheme = false
+    
     var body: some View {
         NavigationStack {
+            
             VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: "person.crop.circle.badge.plus")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 32, height: 32)
-                        .padding(.trailing, 8)
-                    Text("Follow and invite friends")
-                        .font(.system(size: 20))
-                    Spacer()
-                }
-                .padding(.leading, 16)
                 
-                HStack {
-                    Image(systemName: "bell.circle")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 35, height: 35)
-                        .padding(.trailing, 8)
-                    Text("Notifications")
-                        .font(.system(size: 20))
-                    Spacer()
-                }
-                .padding(16)
+                Toggle("Dark Theme".localized, isOn: $darkTheme)
+                    .onChange(of: darkTheme) { newValue in
+                        if let windowScene = UIApplication.shared.windows.first?.windowScene {
+                            windowScene.keyWindow?.overrideUserInterfaceStyle = newValue ? .dark : .light
+                        }
+                    }
+                    .padding()
                 
-                HStack {
-                    Image(systemName: "lock.circle")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 35, height: 35)
-                        .padding(.trailing, 8)
-                    Text("Privacy")
-                        .font(.system(size: 20))
-                    Spacer()
-                }
-                .padding(16)
                 
-                HStack {
-                    Image(systemName: "person.circle")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                        .padding(.trailing, 8)
-                    Text("Account")
-                        .font(.system(size: 20))
-                    Spacer()
+                NavigationLink(destination: NotificationSubView()) {
+                    SettingsRow(systemInageName: "bell.circle", text: "Notifications".localized)
                 }
-                .padding(16)
-                    
-                HStack {
-                    Image(systemName: "questionmark.circle")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                        .padding(.trailing, 8)
-                    Text("Help")
-                        .font(.system(size: 20))
-                    Spacer()
-                }
-                .padding(16)
                 
-                HStack {
-                    Image(systemName: "info.circle")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                        .padding(.trailing, 8)
-                    Text("About")
-                        .font(.system(size: 20))
-                    Spacer()
+                NavigationLink(destination: NotificationSubView()) {
+                    SettingsRow(systemInageName: "questionmark.circle", text: "Help".localized)
                 }
-                .padding(16)
+
+                NavigationLink(destination: NotificationSubView()) {
+                    SettingsRow(systemInageName: "info.circle", text: "About".localized)
+                }
                 
                 Button {
                     AuthService.shared.signOut()
                 } label: {
-                    Text("Log out")
+                    Text("Log out".localized)
                         .font(.system(size: 18))
                         .foregroundColor(Color("black"))
                         .padding(.leading, 16)
@@ -92,7 +48,7 @@ struct SettingsView: View {
                 Spacer()
             }
             .padding(.top)
-            .navigationTitle("Settings")
+            .navigationTitle("Settings".localized)
             .navigationBarTitleDisplayMode(.inline)
         }
         .tint(Color("black"))

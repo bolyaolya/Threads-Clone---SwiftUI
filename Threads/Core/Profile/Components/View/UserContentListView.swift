@@ -47,10 +47,15 @@ struct UserContentListView: View {
                     }
                 }
             }
-            LazyVStack {
-                ForEach(viewModel.threads) { thread in
-                    ThreadCell(thread: thread)
+            
+            if selectedFilter == .threads {
+                LazyVStack {
+                    ForEach(viewModel.threads) { thread in
+                        ThreadCell(thread: thread)
+                    }
                 }
+            } else {
+                RepliesBar()
             }
         }
         .padding(.vertical, 8)
