@@ -120,5 +120,25 @@
 
 "Dark Theme" = "Тёмная тема";
 
-"Enable push notifications" = "Включить пуш уведолмения";
+"Enable push notifications" = "Включить пуш уведомления";
+
+"Help and Support" = "Помощь и поддержка";
+
+"Need assistance? Our dedicated support team is here to help you. Whether you have questions about using Threads, encountering issues, or need guidance on specific features, we're just a message away. Contact us anytime through the app, and we'll provide you with prompt and friendly assistance." = "Нужна помощь? Наша специализированная служба поддержки готова помочь вам. Если у вас возникли вопросы по использованию Threads, вы столкнулись с проблемами или вам нужны рекомендации по конкретным функциям, мы готовы ответить на них одним сообщением. Свяжитесь с нами в любое время через приложение, и мы окажем вам оперативную и дружелюбную помощь.";
+
+"For quick solutions, check out our FAQs section, where you can find answers to common queries. We're committed to ensuring your experience with Threads is smooth and enjoyable. Your satisfaction is our priority. Reach out to us and let us assist you today!" = "Для получения быстрых решений обратитесь к разделу FAQ, где вы найдете ответы на часто встречающиеся вопросы. Мы стремимся к тому, чтобы ваш опыт работы с Threads был гладким и приятным. Ваше удовлетворение - наш приоритет. Свяжитесь с нами и позвольте нам помочь вам уже сегодня!";
+
+"About Threads" = "О Threads";
+
+"Welcome to Threads – your personal space for seamless communication, sharing, and inspiration! Threads is a powerful and user-friendly messaging app designed to keep you connected with your friends, family, and colleagues. Share photos, videos, ideas, and more, all securely and effortlessly." = "Добро пожаловать в Threads - ваше личное пространство для беспрепятственного общения, обмена информацией и вдохновения! Threads - это мощное и удобное приложение для обмена сообщениями, предназначенное для поддержания связи с друзьями, родственниками и коллегами. Обменивайтесь фотографиями, видеороликами, идеями и многим другим - все это безопасно и без лишних усилий.";
+
+"Key Features:" = "Ключевые особенности:";
+
+"Swift & Secure Messaging:" = "Быстрый и безопасный обмен сообщениями:";
+
+"Threads ensures swift and secure real-time messaging. Your personal data and messages are safeguarded with robust encryption, guaranteeing your complete privacy." = "Threads обеспечивает быстрый и безопасный обмен сообщениями в режиме реального времени. Ваши личные данные и сообщения защищены надежным шифрованием, что гарантирует полную конфиденциальность.";
+
+"Multimedia Sharing:" = "Обмен мультимедиа:";
+
+"Share photos, videos, audio recordings, GIFs, and files of any format. Threads supports various multimedia types, allowing you to express yourself fully." = "Обменивайтесь фотографиями, видео, аудиозаписями, GIF-файлами и файлами любого формата. Threads поддерживает различные типы мультимедиа, позволяя полностью выразить себя.";
 

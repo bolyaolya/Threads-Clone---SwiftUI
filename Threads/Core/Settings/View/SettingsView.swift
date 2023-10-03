@@ -29,11 +29,11 @@ struct SettingsView: View {
                     SettingsRow(systemInageName: "bell.circle", text: "Notifications".localized)
                 }
                 
-                NavigationLink(destination: NotificationSubView()) {
+                NavigationLink(destination: HelpSubView()) {
                     SettingsRow(systemInageName: "questionmark.circle", text: "Help".localized)
                 }
 
-                NavigationLink(destination: NotificationSubView()) {
+                NavigationLink(destination: AboutSubView()) {
                     SettingsRow(systemInageName: "info.circle", text: "About".localized)
                 }
                 

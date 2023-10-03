@@ -43,8 +43,8 @@
 		742FF8FB2AB869D30020C23B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FF8FA2AB869D30020C23B /* AuthService.swift */; };
 		742FF8FF2AB8788C0020C23B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FF8FE2AB8788C0020C23B /* ContentViewModel.swift */; };
 		742FF9012AB87C480020C23B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742FF9002AB87C480020C23B /* LoginViewModel.swift */; };
-		74698C4B2ACC4E5F0030DA4C /* HelpSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74698C4A2ACC4E5F0030DA4C /* HelpSubView.swift */; };
 		74698C4F2ACC4EAD0030DA4C /* AboutSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74698C4E2ACC4EAD0030DA4C /* AboutSubView.swift */; };
+		74698C512ACC50360030DA4C /* HelpSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74698C502ACC50360030DA4C /* HelpSubView.swift */; };
 		747708852AC6E43500BD8E15 /* NotificationSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747708842AC6E43500BD8E15 /* NotificationSubView.swift */; };
 		747708872AC6E50100BD8E15 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747708862AC6E50100BD8E15 /* SettingsRow.swift */; };
 		747708892AC83EF200BD8E15 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747708882AC83EF200BD8E15 /* NotificationsViewModel.swift */; };
@@ -102,8 +102,8 @@
 		742FF8FA2AB869D30020C23B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		742FF8FE2AB8788C0020C23B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		742FF9002AB87C480020C23B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		74698C4A2ACC4E5F0030DA4C /* HelpSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSubView.swift; sourceTree = "<group>"; };
 		74698C4E2ACC4EAD0030DA4C /* AboutSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSubView.swift; sourceTree = "<group>"; };
+		74698C502ACC50360030DA4C /* HelpSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSubView.swift; sourceTree = "<group>"; };
 		747708842AC6E43500BD8E15 /* NotificationSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSubView.swift; sourceTree = "<group>"; };
 		747708862AC6E50100BD8E15 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
 		747708882AC83EF200BD8E15 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
@@ -488,8 +488,8 @@
 			isa = PBXGroup;
 			children = (
 				747708842AC6E43500BD8E15 /* NotificationSubView.swift */,
-				74698C4A2ACC4E5F0030DA4C /* HelpSubView.swift */,
 				74698C4E2ACC4EAD0030DA4C /* AboutSubView.swift */,
+				74698C502ACC50360030DA4C /* HelpSubView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -715,7 +715,6 @@
 				742A2BC92AB714CD00BE5EBF /* ThreadsTextFieldModifier.swift in Sources */,
 				7408C0DD2AB9AF57005D4F86 /* ImageUploader.swift in Sources */,
 				742FF8E52AB851810020C23B /* ProfileThreadFilter.swift in Sources */,
-				74698C4B2ACC4E5F0030DA4C /* HelpSubView.swift in Sources */,
 				742FF8FF2AB8788C0020C23B /* ContentViewModel.swift in Sources */,
 				74AD084E2AB89CBB000C9089 /* CurrentUserProfileViewModel.swift in Sources */,
 				742A2BAE2AB70CAE00BE5EBF /* ContentView.swift in Sources */,
@@ -730,6 +729,7 @@
 				742A2BD42AB71CDE00BE5EBF /* ExploreView.swift in Sources */,
 				742A2BC62AB712F400BE5EBF /* RegistrationView.swift in Sources */,
 				74AD08492AB8960C000C9089 /* User.swift in Sources */,
+				74698C512ACC50360030DA4C /* HelpSubView.swift in Sources */,
 				74F56BA82AB9FE0700DDD687 /* ThreadService.swift in Sources */,
 				747708872AC6E50100BD8E15 /* SettingsRow.swift in Sources */,
 				74CADA2C2ABC759D00670ECB /* SettingsView.swift in Sources */,
