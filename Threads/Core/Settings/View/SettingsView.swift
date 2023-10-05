@@ -9,20 +9,24 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @State private var darkTheme = false
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     var body: some View {
         NavigationStack {
             
             VStack(alignment: .leading) {
                 
-                Toggle("Dark Theme".localized, isOn: $darkTheme)
-                    .onChange(of: darkTheme) { newValue in
-                        if let windowScene = UIApplication.shared.windows.first?.windowScene {
-                            windowScene.keyWindow?.overrideUserInterfaceStyle = newValue ? .dark : .light
-                        }
-                    }
-                    .padding()
+                Toggle("Dark Mode".localized, isOn: Binding(
+                                get: { self.colorScheme == .dark },
+                                set: { newValue in
+                                    if let windowScene = UIApplication.shared.connectedScenes.first(where: { $0 is UIWindowScene }) as? UIWindowScene {
+                                        windowScene.windows.forEach { window in
+                                            window.overrideUserInterfaceStyle = newValue ? .dark : .light
+                                        }
+                                    }
+                                }
+                            ))
+                .padding()
                 
                 
                 NavigationLink(destination: NotificationSubView()) {
@@ -32,7 +36,7 @@ struct SettingsView: View {
                 NavigationLink(destination: HelpSubView()) {
                     SettingsRow(systemInageName: "questionmark.circle", text: "Help".localized)
                 }
-
+                
                 NavigationLink(destination: AboutSubView()) {
                     SettingsRow(systemInageName: "info.circle", text: "About".localized)
                 }
