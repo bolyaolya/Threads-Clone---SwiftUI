@@ -15,7 +15,7 @@ struct ExploreView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(viewModel.users) { user in
+                    ForEach(viewModel.filteredUsers) { user in
                         NavigationLink(value: user) {
                             VStack {
                                 UserCell(user: user)
@@ -32,8 +32,22 @@ struct ExploreView: View {
             })
             .navigationTitle("Search".localized)
             .searchable(text: $searchText, prompt: "Search")
+            .onChange(of: searchText) { _ in
+                filterUsers()
+            }
         }
         .tint(Color("black"))
+    }
+    
+    func filterUsers() {
+        if searchText.isEmpty {
+            viewModel.filteredUsers = viewModel.users
+        } else {
+            viewModel.filteredUsers = viewModel.users.filter {
+                $0.username
+                    .localizedCaseInsensitiveContains(searchText)
+            }
+        }
     }
 }
 
