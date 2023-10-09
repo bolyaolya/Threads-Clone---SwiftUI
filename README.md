@@ -11,7 +11,6 @@
   <a href="#installation">Installation</a> •
   <a href="#technologiesused">Technologies Used</a> •
   <a href="#contributing">Contributing</a> •
-  <a href="#license">License</a>
 </p>
 
 ![First screen](https://github.com/bolyaolya/Threads-Clone---SwiftUI/assets/108070285/d04e92df-5311-4db2-9e93-7b1578aabab0)
@@ -82,10 +81,6 @@ Contributions to the project are welcome and encouraged! If you find any bugs or
 3. Commit your changes: git commit -m 'Add YourFeature'
 4. Push to the branch: git push origin feature/YourFeature
 5. Open a pull request
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
